@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +8,17 @@
 </head>
 <body>
     <script>
-        var walkAmount = prompt("당신의 하루 걷는 양은 몇 보인가요?", "0");
-
-        // 조건문에 포함할 수 있는 형식은 논리식, 변수 값(0, " ", null, nudefined => false)
-        if(walkAmount >= 10000) {
-            document.write("매우 좋은 습관을 지니고 계시는군요!!", "<br>");
-        } else {
-            document.write("조금 더 노력하세요.!!","<br>");
-        }
-        // if else문 삼항연산자로 변환
-        var result = walkAmount >= 10000 ? "매우 좋은 습관을 지니고 계시는군요!!<br>" : "조금 더 노력하세요.!!<br>"
+        var walkAmount = prompt("하루 걷는 걸음 수 : ", "0");
         
+        //조건문에 포함할 수 있는 형식은 논리식, 변수 값(0, "", null, undefined ==> false)
+        if(walkAmount >= 10000) {
+            document.write("매우 좋은 습관을 가지고 계십니다!!","<br>");
+        } else {
+            document.write("조금 더 노력하세요!!","<br>");
+        }
+        //if else문 삼항연산자로 변환
+        var result = walkAmount >= 10000 ? "매우 좋은 습관을 가지고 계십니다!!<br>" : "조금 더 노력하세요!!<br>";
+
         document.write(result);
 
         var num = 3;
@@ -26,7 +26,7 @@
             document.write(num,"<br>");
         }
 
-        document.write("=============The End=============");
+        document.write("=========The End========");
     </script>
 </body>
 </html>
